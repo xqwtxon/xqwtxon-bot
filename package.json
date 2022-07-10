@@ -13,16 +13,13 @@
     "lint": "npx eslint src",
     "prebuild": "rm -rf ./dist",
     "build": "tsc",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist" 
   },
   "name": "xqwtxon-bot",
   "description": "<h3 align=\"center\">Discord Bot</h3> <p align=\"center\"> A integration for your future discord server! :heart: </p>",
   "version": "1.0.0",
   "main": "Main.js",
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xqwtxon/xqwtxon-bot.git"
@@ -35,7 +32,11 @@
   "lint-staged": {
     "*.{ts,js,css,md}": "prettier --write"
   },
-  "keywords": ["discord-bot","discord","bot"],
+  "keywords": [
+    "discord-bot",
+    "discord",
+    "bot"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
