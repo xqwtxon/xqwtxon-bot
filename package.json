@@ -5,5 +5,41 @@
     "express": "^4.18.1",
     "node-php": "^0.0.1",
     "php-cgi": "^0.2.0"
+  },
+  "scripts": {
+    "start": "node dist",
+    "test": "jest --detectOpenHandles",
+    "dev": "npx nodemon --inspect",
+    "lint": "npx eslint src",
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc",
+    "clean": "rimraf dist",
+  },
+  "name": "xqwtxon-bot",
+  "description": "<h3 align=\"center\">Discord Bot</h3> <p align=\"center\"> A integration for your future discord server! :heart: </p>",
+  "version": "1.0.0",
+  "main": "Main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xqwtxon/xqwtxon-bot.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,css,md}": "prettier --write"
   }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xqwtxon/xqwtxon-bot/issues"
+  },
+  "homepage": "https://github.com/xqwtxon/xqwtxon-bot#readme"
 }
