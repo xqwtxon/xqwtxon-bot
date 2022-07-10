@@ -34,8 +34,8 @@
   },
   "lint-staged": {
     "*.{ts,js,css,md}": "prettier --write"
-  }
-  "keywords": [],
+  },
+  "keywords": ["discord-bot","discord","bot"],
   "author": "",
   "license": "ISC",
   "bugs": {
